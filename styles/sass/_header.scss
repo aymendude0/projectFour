@@ -1,0 +1,24 @@
+// header styles
+
+
+.userChoice {
+    background-color: rgba(247, 135, 100, 0.7);
+    width:80%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:100px auto;
+    border-radius: 20px;
+}
+
+.button{
+    @include button();
+
+}
+
+.button:hover{
+    background-color: $primaryColor;
+    cursor: pointer;
+    color:black;
+}

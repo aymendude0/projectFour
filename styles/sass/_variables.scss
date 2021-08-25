@@ -1,0 +1,65 @@
+// variables
+
+$baseFont: 'Raleway', sans-serif;
+$headingFont: 'Shadows Into Light', cursive;
+
+$primaryColor: #F4D35E;
+$secondaryColor: #f78764;
+
+
+
+html {
+    font-size: 62.5%;  
+}
+
+body {
+    font-family: $baseFont;
+    font-size: 2rem;
+    color:white;
+    background-color: black;
+    padding:0;
+    margin:0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),url('assets/lightsNight.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    
+}
+
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    margin:40px 0;
+    font-family: $headingFont;
+}
+
+h1{
+    text-transform: uppercase;
+    color: $primaryColor;
+    font-size: 6.5rem;
+    text-shadow: 6px 6px 6px black;
+}
+
+h2 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-shadow: 5px 5px 5px black;
+    letter-spacing: 3px;
+}
+
+
+p {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}

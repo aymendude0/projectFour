@@ -1,0 +1,131 @@
+// mediaQueries
+
+@media(max-width: 1024px){
+    .wrapper{
+        width:90%;
+    }
+
+    .userChoice{
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px){
+    .gridContainer {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .gridItem {
+        margin: 20px auto;
+        width:100%;
+    }
+
+    .gridItem h3{
+        margin: 20px 0;
+    }
+
+    .gridItem.button{
+        width:80%;
+    }
+
+}
+
+
+@media(max-width: 650px){
+    h1 {
+        font-size: 6rem;
+    }
+
+    .userChoice {
+        margin: 40px auto;
+    }
+
+    .button {
+        width: 70%;
+    }
+    .gridItem.button{
+        width:100%;
+    
+    }
+
+
+    .gridContainer {
+        margin: 0 auto;
+        display: block;
+        width:95%;
+        
+    }
+
+    .gridItem {
+        margin: 50px auto;
+        padding: 0;
+        
+    }
+
+    footer p {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media(max-width:500px){
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4.3rem;
+        margin:0;
+    }
+
+    .gridItem h3{
+        font-size: 3.5rem; 
+    }
+
+    .button {
+        width: 85%;
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width:400px){
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    p {
+        font-size: 2rem;
+
+    }
+
+    ul li { 
+        font-size: 2rem;
+
+    }
+    
+
+    .userChoice {
+        margin: 20px auto;
+    }
+
+    .button {
+        width: 90%;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+

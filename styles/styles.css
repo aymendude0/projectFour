@@ -1,0 +1,425 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url("assets/lightsNight.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("assets/lightsNight.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 40px 0;
+  font-family: "Shadows Into Light", cursive;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #F4D35E;
+  font-size: 6.5rem;
+  text-shadow: 6px 6px 6px black;
+}
+
+h2 {
+  font-size: 5.5rem;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+}
+
+.userChoice {
+  background-color: rgba(247, 135, 100, 0.7);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px auto;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: black;
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  width: 40%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px 2px;
+          box-shadow: 0 0 10px 2px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #F4D35E;
+  cursor: pointer;
+  color: black;
+}
+
+.cocktailName h2 {
+  color: #f78764;
+  margin: 70px 0;
+}
+
+.gridContainer {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 10px;
+}
+
+.gridItem {
+  margin: 30px auto;
+}
+
+.gridItem h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.gridItem p {
+  line-height: 40px;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 20px 0;
+  font-size: 2.3rem;
+}
+
+ul li:before {
+  content: '✓';
+}
+
+.imageDrink {
+  width: 75%;
+  background-color: ivory;
+}
+
+.imageDrink img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px 100px 20px;
+  opacity: 0.8;
+}
+
+.gridItem1,
+.gridItem2 {
+  width: 100%;
+  width: 70%;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.gridItem1 p,
+.gridItem2 p {
+  font-size: 1.7rem;
+}
+
+footer p {
+  text-align: center;
+  color: #f78764;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+  .userChoice {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .gridContainer {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .gridItem {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .gridItem h3 {
+    margin: 20px 0;
+  }
+  .gridItem.button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .userChoice {
+    margin: 40px auto;
+  }
+  .button {
+    width: 70%;
+  }
+  .gridItem.button {
+    width: 100%;
+  }
+  .gridContainer {
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+  }
+  .gridItem {
+    margin: 50px auto;
+    padding: 0;
+  }
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.3rem;
+    margin: 0;
+  }
+  .gridItem h3 {
+    font-size: 3.5rem;
+  }
+  .button {
+    width: 85%;
+    padding: 10px 0;
+  }
+  footer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  ul li {
+    font-size: 2rem;
+  }
+  .userChoice {
+    margin: 20px auto;
+  }
+  .button {
+    width: 90%;
+    padding: 0;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
